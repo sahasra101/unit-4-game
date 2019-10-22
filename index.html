@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Crystal Challenge Game</title>
+
+</head>
+
+<body>
+
+    <div class="container" style="width: 50rem;">
+
+        <div class="card">
+            <div class="card-body" id="title">
+                <h1>Crystal Collector Game!</h1>
+            </div>
+        </div>
+
+        <div class="card" style="width: 40rem;">
+            <div class="card-body">
+                <h5 class="card-title">Game Instructions</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-5" id="goalNumberDiv">
+                    <h1 id="mainNumber">Goal # 120 <span id="mainNumberSpan"></span></h1>
+                </div>
+
+                <div class="col-2" id="winsAndLossesDiv">
+                    <h3>Wins: 0<span id="wins"></span></h3>
+                    <br>
+                    <h3>Losses: 0<span id="losses"></span></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="randomNumberDiv">
+            <div class="row" id="randonNumberRow">
+                <div class="col-2" id="randomNumber1div">
+                    <img src="assets/images/blueCrystal1.jpg" class="button" id="blue-button" alt="blue crystal">
+                </div>
+                <div class="col-2" id="randomNumber2div">
+                        <img src="assets/images/greenCrystal1.jpg" class="button" id="green-button" alt="green crystal">
+                    </div>
+                <div class="col-2" id="randomNumber3div">
+                        <img src="assets/images/yellowCrystal1.jpg" class="button" id="yellow-button" alt="yellow crystal">
+                </div>
+                <div class="col-2" id="randomNumber4div">
+                        <img src="assets/images/redCrystal1.jpg" class="button" id="red-button" alt="red crystal">
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="scoreDiv">
+            <div class="card-body" id="scoreCard">
+                <h3>Your Score: <span id="score"></span></h3>
+            </div>
+        </div>
+
+        <div class="card" id="workingTotalDiv">
+            <div class="card-body" id="workingTotalCard">
+                <h1>Your working total: <span id="summedNumber"></span></h1>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
