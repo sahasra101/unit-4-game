@@ -19,13 +19,16 @@ jQuery(document).ready(function ($) {
         yellowN = Math.floor(Math.random() * 12) + 1;
         redN = Math.floor(Math.random() * 12) + 1;
         workingTotal = 0;
+        $("#workingTotal").text(workingTotal);
         goalNumber = Math.floor(Math.random() * 101) + 19;
+        $("#mainNumberSpan").text(goalNumber);
     }
 
     // function to play 
     function play(color) {
         console.log(`You pressed the ${color} crystal.`);
         workingTotal = workingTotal + color;
+        $("#workingTotal").text(workingTotal);
             }
 
     // function to compare working total to goal number
@@ -40,14 +43,19 @@ jQuery(document).ready(function ($) {
 
     function winGame() {
         wins++;
+        $("#wins").text(wins);
         console.log(`you have won the game!! Now your score is ${wins}`);
         resetGame();
+        alert("Congratulations!! You have Won!! Play Again!!");
+
     }
     
     function loseGame() {
         losses++;
+        $("#losses").text(losses);
         console.log(`you have lost the game!! Now your losses are ${losses}`);
         resetGame();
+        alert("Oh No, You Have Gone Over the Goal Number!! Play Again!!");
     }
 
     resetGame();

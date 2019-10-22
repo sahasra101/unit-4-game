@@ -6,6 +6,19 @@ html {
     background-size: cover;
   }
 
+  .container {
+    background: url(../images/background2.jpg) repeat;
+  }
+
+  .card {
+    background: url(../images/background2.jpg) repeat;
+  }
+
+.text {
+    color: white;
+    font-weight: 700;
+}
+
   .button {
     width: 75px;
     height: 75px;
